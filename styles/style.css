@@ -9,6 +9,7 @@
 body {
     font-family: Concert One;
 }
+
 /*HEADER*/
 header {
     background-color: white;
@@ -19,16 +20,11 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    margin: 0;
-    box-sizing: border-box;
 }
 
 header img {
-    width: 180px;
-    height: 177px;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    width: 200px;
+    height: 200px;
     display: block;
     margin-block-start: 0,65em;
     margin-inline-end: 0,65em;
@@ -37,20 +33,15 @@ header img {
 }
 
 .menu-nav {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     display: block;
 }
 
 .menu-nav ul {
     font-size: 1.3rem;
     list-style-type: none;
-    padding: 0;
     font-weight: bold;
     text-align: left;   
     display: flex;
-    margin: 0;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
@@ -60,15 +51,11 @@ header img {
 
 .menu-nav ul li {
     margin: 1px 20px 1px 20px;
-    padding: 0; 
     display:list-item;
-    
 }
 
 .menu-nav ul li a {
     text-decoration: none;
-    margin: 0;  
-    padding: 0;
 }
 
 
@@ -79,7 +66,6 @@ footer {
     align-items: center;
     justify-content: space-around;
     padding: 15px;  
-    margin: 0;
 }
 
 footer ul li { 
@@ -94,7 +80,6 @@ footer div {
 .menu-social {
     display: block;
     margin: 1px 20px 1px 20px;
-    box-sizing: border-box;
 }
 
 .rrhh {
@@ -112,9 +97,6 @@ footer div {
 footer img {
     width: 120px;
     height: 118px; 
-    position: relative;
-    top: 3px;
-    left: 300px;
 }
 
 footer ul li a img {
@@ -123,19 +105,10 @@ footer ul li a img {
     display: inline-block;
 }
 
-footer ul li a img {
-    position: relative;
-    top: 40px;
-    left: 600px;
-}
-
 .fixed {
     position: fixed;
     bottom: 50px;
     right: 50px;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
     display: block;
 }
 
@@ -152,62 +125,48 @@ footer ul li a img {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    height: 75vh;
 }
 
 .principal div img {
     width: 420px;
     height: 420px;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     overflow: clip;
     overflow-clip-margin: content-box;
+    display: flex;
+    align-items: center;
 }
 
 .principal div p {
     font-size: 1.3rem;
     text-align: justify;
-    padding: 0;
-    margin: 0;
     display: block;
     margin-block-end: 1em; 
     margin-block-start: 1em;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     width: 600px;
-    box-sizing: border-box;
 }
 
 .ubicacion {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    height: 75vh;
 }
 
 .ubicacion h3 { 
     font-size: 2rem;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
 .ubicacion p {
     font-weight:lighter;
     font-size: medium;
-    margin: 0;
-    padding: 0;
     margin-block-end: 1em;
     margin-block-start: 1em;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     display: block;
-    box-sizing: border-box;
 }
 
 .dire {
@@ -220,23 +179,58 @@ footer ul li a img {
 /*CONTACTO*/
 
 .contact-section {
-    margin: 50px;
+    margin: 30px 0px;
     font-size: 1.5rem;
-    border: 3px solid rgb(238, 133, 238);
-    width: 100%;
-    display: grid;
+    border: 3px solid rgb(216 84 145);
+    width: 75%;
+    display: flex;
+    padding: 15px;
 }
 
 /*FOTOS*/
-.galeria img {
-    width: 500px;
-    height: 500px;
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
 }
 
-.titulogal {
-    font-size: 2rem;;
+.galeria img {
+    width: 300px;
+    height: 300px;
+}
+
+.titulo {
+    font-size: 2rem;
 }
 
 /*PROMOCIONES*/
+.imgpromo {
+
+}
 
 /*SERVICIOS*/
+.servicios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    margin-top: 30px;
+}
+
+.contenedorserv {
+    width: 250px;
+    height: 300px;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.iconoserv {
+    width: 200px;
+    height: 200px;
+}
+
+.descripserv {
+    font-size: 1rem;
+}
