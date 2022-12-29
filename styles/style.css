@@ -25,7 +25,7 @@ header {
 header img {
     width: 200px;
     height: 200px;
-    display: block;
+    display: flex;
     margin-block-start: 0,65em;
     margin-inline-end: 0,65em;
     margin-inline-end: 0;
@@ -46,7 +46,7 @@ header img {
 }
 
 .menu-nav {
-    display: block;
+    display: flex;
 }
 
 .menu-nav ul {
@@ -125,8 +125,8 @@ footer ul li a img {
 
 .fixed {
     position: fixed;
-    bottom: 50px;
-    right: 50px;
+    bottom: 100px;
+    right: 100px;
     display: block;
 }
 
@@ -175,7 +175,6 @@ footer ul li a img {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 75vh;
 }
 
 .ubicacion h3 { 
@@ -266,3 +265,173 @@ footer ul li a img {
 .descripserv {
     font-size: 1rem;
 }
+
+/**---- MEDIA QUERY--------*/
+@media screen and (max-width:992px) {
+    .principal div p {
+        font-size: 1rem;
+        text-align: justify;
+        display: block;
+        margin-block-end: 1em; 
+        margin-block-start: 1em;
+        margin-inline-end: 0px;
+        margin-inline-start: 0px;
+        width: 300px;
+    }
+    
+    .galeria {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        }
+    }
+
+    @media screen and (max-width:768px) {
+        header {
+            flex-direction: column;
+        }
+
+        header img {
+            width: 150px;
+            height: 150px;
+        }
+
+        .contenedorserv {
+            width: 200px;
+            height: 300px;
+            margin: 10px;
+        }
+
+        .galeria img {
+            width: 250px;
+            height: 250px;
+        }
+    }
+
+    @media screen and (max-width:576px) {
+        header img {
+            width: 120px;
+            height: 120px;
+        }
+        
+        .menu-nav ul {
+            font-size: 1rem;
+            font-weight:300;
+            padding-inline-start: 10px;
+        }
+        
+        .menu-nav ul li {
+            margin: 1px 10px 1px 10px;
+        }
+
+        .principal {
+            flex-direction: column;
+        }
+
+        .principal div img {
+            width: 210px;
+            height: 210px;
+            margin-top: 10px;
+        }
+
+        .principal div p {
+            font-size: 0.75rem;
+            width: 400px;
+        }
+
+        .ubicacion {
+            flex-direction: column;
+        }
+        .ubicacion h3 {
+            font-size: 1.5rem;
+        }
+
+        .ubicacion iframe {
+            width: 250px;
+            height: 250px;
+        }
+
+        .ubicacion p {
+            font-size: small;
+        }
+        .servicios {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            justify-items: center;
+            margin-top: 30px;
+        }
+        
+        .titulo {
+            font-size: 1.5rem;
+        }
+
+        .contenedorserv {
+            width: 150px;
+            height: 200px;
+            margin: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            transition: 1s;
+        }
+        
+        .contenedorserv:hover {
+            transform: scale(1.01);
+            -webkit-box-shadow: 5px 3px 0px 0px rgba(0,0,0,0.47);
+            -moz-box-shadow: 5px 3px 0px 0px rgba(0,0,0,0.47);
+            box-shadow: 5px 3px 0px 0px rgba(0,0,0,0.47);    
+        }
+        
+        .iconoserv {
+            width: 150px;
+            height: 150px;
+        }
+        
+        .descripserv {
+            font-size: small;
+            font-weight: lighter;
+        }
+
+        .galeria {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            }
+        
+            .contact-section {
+                margin: 15px 0px;
+                font-size: 1.2rem;
+                border: 2px solid rgb(216 84 145);
+                display: flex;
+                padding: 5px;
+            }
+
+            footer {    
+                border-top: 2px solid grey;
+            }
+            
+            .menu-social {
+                margin: 1px 10px 1px 10px;
+            }
+            
+            .rrhh {
+                font-weight: lighter;
+                font-size: 1.1rem;
+            }
+            
+            .rrhh li a {
+                font-size: smaller;
+                font-weight: lighter; 
+            }
+            
+            footer ul li a img {
+                width: 20px;
+                height: 20px;
+                display: inline-block;
+            }
+            
+            .fixed img {
+                width: 40px;    
+                height: 40px;
+            }
+        
+    }
