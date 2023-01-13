@@ -3,7 +3,7 @@
 *{
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
+    box-sizing: content-box;
 }
 
 body {
@@ -288,6 +288,7 @@ footer ul li a img {
     @media screen and (max-width:768px) {
         header {
             flex-direction: column;
+            
         }
 
         header img {
@@ -435,3 +436,25 @@ footer ul li a img {
             }
         
     }
+
+    @media screen and (max-width:576px) {
+    .menu-nav{
+        width: 70%;
+        background-size: 100%;
+    }
+
+    .menu-nav ul {
+        font-size: 0.7rem;
+        font-weight: lighter;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 15px;
+    }
+    
+    .menu-nav ul li {
+        margin: 1px 15px 1px 15px;
+        display:list-item;
+    }
+}
