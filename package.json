@@ -1,0 +1,25 @@
+{
+  "name": "segundaentrega",
+  "version": "1.0.0",
+  "description": "POR: VICTORIA CARDOSO",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "sass scss/estilos.scss styles/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vkycardoso/selkisestudio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vkycardoso/selkisestudio/issues"
+  },
+  "homepage": "https://github.com/vkycardoso/selkisestudio#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "sass": "^1.57.1"
+  }
+}

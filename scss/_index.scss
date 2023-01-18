@@ -1,0 +1,54 @@
+/*INDEX*/
+
+.principal {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 75vh;
+ div img {
+    width: 420px;
+    height: 420px;
+    overflow: clip;
+    overflow-clip-margin: content-box;
+    display: flex;
+    align-items: center;
+    transition: 0.3s ease all;
+}
+ img:hover {
+    transform: scale(1.5);
+}
+ div p {
+    font-size: 1.3rem;
+    text-align: justify;
+    display: block;
+    margin-block-end: 1em; 
+    margin-block-start: 1em;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    width: 600px;
+}
+}
+
+.ubicacion {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+ h3 { 
+    font-size: 2rem;
+}
+p {
+    font-weight:lighter;
+    font-size: medium;
+    margin-block-end: 1em;
+    margin-block-start: 1em;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    display: block;
+.dire {
+    font-weight: bold;
+}
+.horario {
+    font-weight: bold;
+}
+}
+}

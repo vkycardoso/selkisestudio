@@ -1,0 +1,35 @@
+
+/*SERVICIOS*/
+.servicios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    margin-top: 30px;
+}
+
+.contenedorserv {
+    width: 250px;
+    height: 300px;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    transition: 1s;
+}
+
+.contenedorserv:hover {
+    transform: scale(1.05);
+    -webkit-box-shadow: 15px 13px 5px 0px rgba(0,0,0,0.47);
+    -moz-box-shadow: 15px 13px 5px 0px rgba(0,0,0,0.47);
+    box-shadow: 15px 13px 5px 0px rgba(0,0,0,0.47);    
+}
+
+.iconoserv {
+    width: 200px;
+    height: 200px;
+}
+
+.descripserv {
+    font-size: 1rem;
+}
