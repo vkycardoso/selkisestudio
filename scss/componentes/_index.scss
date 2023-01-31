@@ -18,7 +18,7 @@
     transform: scale(1.5);
 }
  div p {
-    font-size: 1.3rem;
+    font-size: nth($font-size , 1 );
     text-align: justify;
     display: block;
     margin-block-end: 1em; 
@@ -34,7 +34,7 @@
     justify-content: space-around;
     align-items: center;
  h3 { 
-    font-size: 2rem;
+    font-size: nth($font-size , 3 );
 }
 p {
     font-weight:lighter;

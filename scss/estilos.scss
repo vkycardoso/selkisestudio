@@ -1,7 +1,10 @@
-@import "generales.scss";
-@import "index.scss";
-@import "contacto.scss";
-@import "fotos.scss";
-@import "promociones.scss";
-@import "servicios.scss";
-@import "mediaqueries.scss";
+@import "./bases/generales";
+@import "./bases/mediaqueries";
+@import "./bases/variables";
+@import "./componentes/index";
+@import "./componentes/contacto";
+@import "./componentes/fotos";
+@import "./componentes/promociones";
+@import "./componentes/servicios";
+
+
