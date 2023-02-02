@@ -54,7 +54,6 @@ header header .menu-nav ul {
   margin-inline-end: 0px;
   padding-inline-start: 30px;
   display: flex;
-  flex-direction: row;
 }
 header header .menu-nav li {
   margin: 1px 20px 1px 20px;
