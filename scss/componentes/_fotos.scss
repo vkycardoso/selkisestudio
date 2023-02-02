@@ -1,14 +1,13 @@
-/*FOTOS*/
 .galeria {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    
+
     img {
     width: 300px;
     height: 300px;
 }
 }
 .titulo {
-    font-size: nth($font-size , 3 );
+    font-size: 2rem;
 }

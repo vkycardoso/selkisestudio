@@ -1,11 +1,10 @@
-/*INDEX*/
 
 .principal {
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 75vh;
- div img {
+div img {
     width: 420px;
     height: 420px;
     overflow: clip;
@@ -14,11 +13,11 @@
     align-items: center;
     transition: 0.3s ease all;
 }
- img:hover {
+img:hover {
     transform: scale(1.5);
 }
- div p {
-    font-size: nth($font-size , 1 );
+div p {
+    font-size: 1.3rem;
     text-align: justify;
     display: block;
     margin-block-end: 1em; 
@@ -33,9 +32,10 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
- h3 { 
-    font-size: nth($font-size , 3 );
+h3 { 
+    font-size: 2rem;
 }
+
 p {
     font-weight:lighter;
     font-size: medium;

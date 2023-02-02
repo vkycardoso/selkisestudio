@@ -1,5 +1,3 @@
-
-/*SERVICIOS*/
 .servicios {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -22,7 +20,7 @@
     transform: scale(1.05);
     -webkit-box-shadow: 15px 13px 5px 0px rgba(0,0,0,0.47);
     -moz-box-shadow: 15px 13px 5px 0px rgba(0,0,0,0.47);
-    box-shadow: 15px 13px 5px 0px rgba(0,0,0,0.47);    
+    box-shadow: 15px 13px 5px 0px rgba(0,0,0,0.47); 
 }
 
 .iconoserv {
@@ -31,5 +29,5 @@
 }
 
 .descripserv {
-    font-size: 1nth($font-size , 4 );
+    font-size: 1rem;
 }

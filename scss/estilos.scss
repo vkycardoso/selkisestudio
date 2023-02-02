@@ -1,10 +1,11 @@
-@import "./bases/generales";
+@import "./bases/generales"; 
+@import "./componentes/header";  
+@import "./componentes/footer";
 @import "./bases/mediaqueries";
 @import "./bases/variables";
-@import "./componentes/index";
 @import "./componentes/contacto";
 @import "./componentes/fotos";
+@import "./componentes/index";
 @import "./componentes/promociones";
 @import "./componentes/servicios";
-
 
